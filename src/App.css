@@ -1,0 +1,419 @@
+body {
+  /* overflow-y: hidden;  */
+  /* overflow-x: hidden;  */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 0px;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.button {
+  background-color: #4caf50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.TransactButton {
+  background-color: #c97539;
+}
+
+.MetaMaskBtn {
+  background-color: #fb8a00;
+  /* Green */
+}
+
+.input,
+select {
+  width: 80%;
+  padding: 6px 5px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #5e5e5e;
+  font-weight: bold;
+}
+
+.HiddenInnput,
+select {
+  width: 97%;
+  padding: 6px 5px;
+  margin: 8px 0;
+  display: inline-block;
+  border: unset !important;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+  background-color: unset !important;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem;
+  grid-gap: 1rem;
+  align-items: initial;
+  justify-content: center;
+  text-align: center;
+}
+
+.iBTTwoColumnscontainer{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  /* grid-gap: 1rem; */
+  align-items: initial;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(225, 225, 225);
+}
+
+.twoColumnscontainer {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-gap: 2rem;
+  align-items: initial;
+  justify-content: center;
+  text-align: center;
+  column-gap: 20px !important;
+  row-gap: 20px !important;
+}
+
+.twoColumnscontainer .item {
+  margin-top: 20px;
+  border: solid 1px rgb(255, 255, 255);
+  padding: 10px !important;
+  border-radius: 5px;
+  background-color: rgb(0 ,159, 209);
+  font-size: 15px;
+  font-weight: bold;
+  display: none;
+}
+
+.twoColumnscontainerClassification {
+  display: grid;
+  grid-template-columns: 50rem 40rem;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.linkRouting{
+  text-decoration: none !important;
+  color: white !important;
+  width: 70%;
+  height: 30px;
+  background-color: #4caf50;
+  border: none;
+  padding: 23px 20px 20px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.linkBackHome{
+  width: 30% !important;
+  height: 10px !important;
+  background-color: #4caf50;
+  border: none;
+  padding: 20px 29px 25px 20px !important;
+  font-size: 14px !important;
+  /* margin-bottom: 150px; */
+}
+
+
+.twoColumnscontainerHomePage {
+  display: grid;
+  grid-template-columns: 10rem 10rem;
+  grid-gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.mainTwoColumnsContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  /* grid-gap: 4rem; */
+  align-items: initial;
+  justify-content: center;
+  text-align: center;
+  /* margin-top: 20%; */
+}
+
+.mainTwoColumnsContainer .item {
+  padding-top: 10px;
+}
+
+.LeftColumn {
+ padding-top: 50px !important;
+ background-color: rgb(233, 235, 238);
+ position: sticky !important;
+ top: 0 !important;
+ position: -webkit-sticky !important;
+}
+
+.RightColumn {
+ padding-top: 10px !important;
+ background-color: rgb(248 ,248, 250);
+ overflow-y: scroll !important
+}
+
+.buttonHomePage{
+  width: 100%;
+  height: 100px;
+  background-color: #4caf50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul li {
+  font-size: 14px;
+  color: rgb(234, 234, 234);
+  font-weight: bold;
+}
+
+.BottomMargin {
+  margin-bottom: 50px;
+}
+
+.container .item {
+  padding: 5px 5px;
+}
+
+.OneColumnContainer {
+  display: grid;
+  grid-template-columns: 25rem;
+  grid-gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.container .item div {
+  margin-top: 40px;
+}
+  
+#TransactTitle,
+#CalltTitle {
+  display: none;
+}
+
+#trueRadioText,
+#falseRadioText {
+  font-size: 18px;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  background-color: #4caf50;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(227, 227, 227);
+  font-weight: bold;
+  border: 1px solid white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.activeBox {
+  background-color: #d41515 !important;
+}
+
+.activeBoxYellow {
+  background-color: rgb(255, 153, 0) !important;
+}
+
+.margin5 {
+  margin-top: 80px !important;
+}
+.margin4 {
+  margin-top: 160px !important;
+}
+.margin3 {
+  margin-top: 240px !important;
+}
+.margin2 {
+  margin-top: 320px !important;
+}
+.margin1 {
+  margin-top: 400px !important;
+}
+.margin0 {
+  margin-top: 480px !important;
+}
+.removemargin {
+  margin: 0 !important;
+}
+
+.textInBox {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #cd5911;
+  display: none;
+}
+
+.priceBox {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #1149cd;
+}
+
+.billBox {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  background-color: #cd1172;
+  display: none;
+}
+
+.image{
+  width: 85%;
+  border-radius: 5px;
+  border: solid 1px rgb(191, 191, 191);
+  display: none;
+  margin: auto;
+  /* margin: 0px 20px; */
+}
+
+.image_cycle {
+  width: 40% !important;
+  margin-top: 60px !important;
+}
+
+.displayNone{
+  display: none !important;
+}
+
+.userClass {
+  width: 70%;
+  margin: 10px auto auto auto;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  background-color: rgb(0 ,159, 209);
+  display: none;
+}
+
+.displayFlex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.TopMargin {
+  margin-top: 30px !important;
+}
+
+.ibtButton {
+  margin-left: 20px;
+  background-color: #e44d0c !important;
+}
+
+.imageTitle{
+  color: #0f8ee8;
+  margin-bottom: 10px !important;
+  display: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .container {
+    display: grid;
+    grid-template-columns: 25rem;
+    grid-gap: 0rem;
+    align-items: initial;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #TitleDesktop {
+    display: none;
+  }
+
+  #TransactTitle,
+  #CalltTitle {
+    display: block;
+  }
+
+  .BottomMargin {
+    margin-bottom: 0px;
+  }
+}
